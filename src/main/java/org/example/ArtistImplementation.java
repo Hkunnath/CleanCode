@@ -7,7 +7,7 @@ public class ArtistImplementation implements Artist {
     @Override
 
     public void setName(String name) {
-        Artistname = "Honey";
+        Artistname = name;
     }
 
     @Override

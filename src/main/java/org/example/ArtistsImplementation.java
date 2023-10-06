@@ -17,14 +17,29 @@ public class ArtistsImplementation implements Artists{
     }
 
     @Override
+    public int size() {
+        return count;
+    }
+
+    @Override
     public List<Artist> search(String lastname) {
         List<Artist> resultList = new ArrayList<>();
+
+        //Linear search
         for(int i =0 ; i < count ; i++){
-            boolean matches = artists[i].getName().equals(lastname);
+            boolean matches = artists[i].getName().equalsIgnoreCase(lastname);
             if(matches){
                 resultList.add(artists[i]);
             }
         }
         return resultList;
+    }
+
+    public List<Artist> search2(String name){
+        List<Artist> resultList2 = new ArrayList<>();
+
+        //Binary search
+
+        return resultList2;
     }
 }

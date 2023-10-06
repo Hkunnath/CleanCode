@@ -6,4 +6,5 @@ public interface Artists extends searchable{
 
     Artist get(int index);
 
+    int size();
 }

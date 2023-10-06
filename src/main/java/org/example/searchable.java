@@ -19,4 +19,5 @@ public interface searchable {
      * n results (where n > 1): a list with n entries
      */
     List<Artist> search(String lastname);
+    List<Artist> search2(String name);
 }
